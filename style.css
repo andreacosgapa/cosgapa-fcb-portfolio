@@ -1,0 +1,116 @@
+/*
+Syntax for CSS
+
+Selector {
+	property: value;
+
+}
+*/
+ /* in CSS we have SPECIFICITY RULE HIGHER PRIORITY (ID)
+ (ELEMENT)
+
+Least Priority(Universal)
+
+ */
+/*Universal Selector*/
+ *{ 
+ 	font-family: "Roboto", sans-serif;
+}
+
+/*Element Selector */
+h1, h2 {
+	font-family: "Monserrat", sans-serif;
+}
+
+img{
+	height: 250px;
+	width: 250px;
+	border: 5px solid forestgreen;
+	border-radius: 20%;
+
+}
+
+/*Id Selector */
+#landing {
+	/*vh- viewheight --> determined or measured percentage of the hieght of the device you are viewing your webpage in */
+	height: 90vh;
+	/* flexbox --> allows us to arrange or layout elements inside our landing section horizontally and vertically 
+	by default, display:flex; arranges elements inside the parent element */
+
+	display: flex; /*flexible responsive from left to right*/ 
+	flex-direction: column; /*may structure na*/
+	justify-content: center; /*if horizontally ang alignment*/
+	align-items: center;
+}
+
+
+#gallery {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+}
+
+
+ul{
+	
+	/*padding-top: 25px;
+	padding-bottom: 50px;
+	padding-left: 60px;
+	padding-right: 80px;
+	*/
+	list-style: none;
+	padding: 0;
+}
+
+/*Class Selector*/
+.tools {
+
+	/*#f2f2f2 --> hex code, for shades of colors*/
+	border: 5px solid #f2f2f2;
+	height: 200px;
+	width: 75%;
+	margin: 20px;
+	padding: 25px;
+}
+
+h2{
+	color: #007bff;
+}
+
+/*makes the scrolling of the page smooth*/
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+/*
+Extra Notes
+Bootstrap Spaces
+m=> margin
+p=> padding
+
+t=> top
+s=> for start or left
+e=> for end or right
+b=> bottom
+
+x=> x-axis
+y=> y-axis
+
+1-5 or auto
+
+mx-auto
+
+mt-auto
+ilalagay sa loob ng class
+
+https://getbootstrap.com/docs/5.2/utilities/colors/#colors
+
+
+*/
